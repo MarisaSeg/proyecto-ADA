@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: #fcfcfc;
+    
+}
+/* Header */
+header {
+    background-image: url("../img/cabecera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 85vh;
+    display: flex; 
+    justify-content: space-between;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+/* Logo */
+.logo {
+    text-transform: uppercase;
+    display: inline-flex;
+}
+nav .logo h2 {
+    margin: 8px;
+    font-size: 1.4rem;
+    line-height: 70px;
+    font-weight: 700px;
+    color: #000;
+}
+.logo img {
+    margin-top: 10px;
+    height: 60px;
+} 
+nav {
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+.enlaces {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+}
+.enlaces li {
+    list-style: none;
+    padding: 10px 5px;
+    margin: 0 .5em;
+
+}
+a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-right: #4bae77;
+}
+.enlaces li a:hover {
+    color: #fd5e53;
+    transition: .5s;
+}
+a.button:hover{
+    background-color: rgba(0, 0, 0, .2);
+    color: #fd5e53;
+    border: 1.7px #fd5e53 solid;
+    border-radius: 15px;
+    padding: 9px 15px;
+    transition: .5s;
+ }
+ /* Menú hamburguesa */
+ .hamb img {
+    width: 30px;
+ }
+ button.hamb {
+    background: none;
+    cursor: pointer;
+    border: none;
+    display: none;
+ }
+
+/* Sección Nosotros */
+section {
+    font-family: 'Cabin', sans-serif;
+}
+section.nosotros {
+    margin: 10px  auto 40px;
+    padding: 10px 30px;
+    width: 100%;
+    color: #000;
+    background-color: #fcfcfc;
+}
+section.nosotros .info {
+    text-align: center;
+    width: 100%;
+}
+
+section.nosotros p {
+    font-size: 1.2rem;
+    padding: 32px auto;
+    width: 70%;
+    margin: auto ;
+    line-height: 40px;
+}
+.wave {
+    height: 100px;
+    overflow: hidden;
+    margin-top: -100px;
+}
+.wave2 {
+    height: 70px;
+    overflow: hidden;
+    margin-top: -70px;
+}
+.wave3 {
+    height: 60px;
+    overflow: hidden;
+    margin-top: -50px;
+}
+.separar {
+    width: 90%;
+    margin:auto ;
+   color: #6cc091;
+}
+
+/* Servicios */
+.servicios {
+    margin-top: 30px;
+}
+.contenedor-tratamiento.tarjeta {
+    margin-left: auto;
+}
+.contenedor-tratamientos {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    width: 85%;
+}
+.servicio-img {
+    width: 203px;
+    height: 135px;
+}
+.titulos {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contenedor-tratamientos {
+    text-align: center;
+    padding: 1rem;
+   
+}
+.contenedor-tratamiento p {
+    padding: 0.4rem;
+}
+.titulo-servicio {
+ margin-bottom: 0.5rem;
+}
+.tarjeta {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px #8d8eaf;
+    margin: 10px 5px;
+    padding: 30px 10px;
+}
+.detalle {
+    margin-bottom: 20px;
+}
+a.link {
+    background-color: #cfad8e;
+    padding: 13px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.contenedor-servicio {
+    margin: 20px 40%  ;
+}
+
+/* Carrousel productos */
+section.productos {
+    margin: 30px;
+}
+.productos .contenido ul li{
+    display: flex;
+}
+.productos p.titulos {
+    font-size: 1.3rem;
+}
+.productos .contenido ul li p {
+    margin-top: 10%;
+    font-size: 1.5rem;
+}
+.contenido {
+    display: flex;
+    margin: 5px auto;
+
+}
+.link-producto {
+    padding: 25px;
+}
+.slider {
+    width: 65%;
+    overflow: hidden;
+
+}
+.slider ul {
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: slide 20s infinite alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 70%;
+    border-radius: 10px;
+}
+.contenedor-producto {
+   width: 200px;
+   margin: auto;
+}
+@keyframes slide {
+    0% {margin-left: 0;}
+    20%{margin-left: 0; }
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+
+}
+/* Formulario */
+#contacto {
+    background: #fcfcfc;
+    color: #6cc091;
+    padding: 50px 0px;
+
+}
+#contacto h4 {
+     text-align: center;
+     font-size: 24px;
+     margin-bottom: 20px;
+}
+#contacto form {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.datos-form {
+    display: flex;
+}
+.datos-form div {
+    padding: 10px;
+    flex: 1;
+}
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+form input, form textarea {
+    background: #fcfcfc;
+    border: 2px solid #4bae77;
+    padding: 10px 5px;
+    border-radius: 10px;
+    outline: 0;
+    color: #cfad8e;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+form input:focus, form textarea:focus {
+    border-color: #cfad8e;
+    box-shadow: 0 0 1px #cfad8e;
+}
+form input::placeholder,
+form textarea::placeholder {
+    color: #4bae77;
+    font-size: 18px;
+}
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.boton-formulario .boton.saber-mas{
+    display: block;
+    border: 2px solid #4bae77;
+    border-radius: 8px;
+    color: #4bae77;
+    text-align: center;
+    transition: 0.4s;
+    padding: 10px;
+    margin: 2px auto;
+
+}
+.boton-formulario {
+    padding: 10px;
+   }
+.boton-formulario .boton.saber-mas:hover {
+    background: #4fa776ad;
+    color: #fff;
+}
+footer {
+    background: #6cc091;
+    padding: 10px 0px;
+    text-align: center;
+    border-top: 2px solid #4bae77;
+    display: flex;
+    
+}
+footer nav {
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+footer nav p{
+    padding: auto;
+    
+}
+footer nav ul {
+    display: flex;
+    width: 150px;
+    padding: auto;
+}
+footer nav ul li a img {
+    width: 40px;
+}
+
+/* Responsive */
+
+
+@media (max-width:768px){
+    header {
+        max-height: 30vh;
+    }
+    header .logo {
+        padding-left: 30px;
+        width: 350px;
+    }
+    .logo h2 {
+        font-size: 16px;
+    }
+    header nav {
+        padding-left: 20px;
+        flex-direction: column;
+    }
+    .enlaces {
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        height: 30vh;
+        background: rgba(0, 0, 0, .3);
+        top: 70px;
+        text-align: center;
+        transition: all .5s;
+        right: 0;
+        display: none;
+    }
+    button.hamb {
+        display: block ;
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        cursor: pointer;
+        width: 10%;
+    }
+    .enlaces.activado{
+        display: flex;
+    }
+    .enlaces li {
+        flex-direction: column;
+        margin: 10px 0;
+        line-height: 5px;
+        padding: 2rem;
+    }
+    .enlaces li a {
+            font-size: 18px;
+            color: #fff;
+    }
+    .enlaces li a:hover {
+            background: none;
+            color: #4bae77;
+    }
+    .enlaces li:last-child{
+            background: none;
+            padding: 1rem;
+    }
+    
+    .servicios .contenedor-tratamientos {
+        display: block;
+        align-items: center;
+        margin: auto;
+    }
+    .tarjeta {
+        width: 50%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+    .slider {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    section.productos .contenido {
+         flex-direction: column;
+    }
+    .contenido .slider ul li {
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider img {
+            width: 40%;
+            margin: auto;
+    }
+    footer {
+        padding: 10px;
+        display: flex;
+    }
+    footer nav {
+        width: 100%
+    }
+    footer nav ul {
+        display: none;
+    }
+    footer p {
+        padding-right: 0;
+        width: 450px;
+        height: 25px;
+        margin-top: 45px;
+        text-align: center;
+    }
+} 
+@media (max-width: 480px) {
+    header .logo {
+        padding-left: 10px;
+    }
+  
+    .tarjeta {
+        width: 70%;
+        padding: 20px;
+        margin: 20px auto;
+       }
+}
+
